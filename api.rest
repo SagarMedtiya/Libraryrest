@@ -1,0 +1,24 @@
+POST http://localhost:3000/api/create HTTP/1.1
+Content-Type: application/json
+
+{
+    "author": "J. K. Rowling",
+    "title" : "Harry Potter",
+    "isbn" : "9780545010221",
+    "releasedate" : "1997"
+}
+
+###
+PUT http://localhost:3000/api/update/62961f8429191f4f18e1716f HTTP/1.1
+Content-Type: application/json
+
+{
+    "author": "J. K. Rowling",
+    "title" : "Harry Potter",
+    "isbn" : "9780545010251",
+    "releasedate" : "1998"
+}
+
+###
+DELETE  http://localhost:3000/api/update/62961f8429191f4f18e1716f HTTP/1.1
+Content-Type: application/json
